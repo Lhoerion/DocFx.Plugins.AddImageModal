@@ -140,6 +140,7 @@ namespace DocFx.Plugins.AddImageModal
 
         private static void UpdateImageNode(HtmlDocument htmlDoc, HtmlNode imgNode, string src)
         {
+            imgNode.Attributes.Add(htmlDoc.CreateAttribute("loading", "lazy"));
             imgNode.Attributes.Add(htmlDoc.CreateAttribute("data-toggle", "modal"));
             imgNode.Attributes.Add(htmlDoc.CreateAttribute("data-src", imgNode.Attributes["src"].Value));
             imgNode.Attributes["src"].Value = src;
