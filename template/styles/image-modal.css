@@ -1,7 +1,3 @@
-.blocker {
-    padding: 80px;
-}
-
 .blocker:before {
     display: none;
 }
@@ -58,4 +54,10 @@ img[data-toggle="modal"] {
     overflow: hidden;
     object-fit: contain;
     user-select: none;
+}
+
+@media (max-width: 1024px) {
+    .blocker {
+        padding: 80px;
+    }
 }
