@@ -56,7 +56,7 @@ img[data-toggle="modal"] {
     user-select: none;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
     .blocker {
         padding: 80px;
     }
